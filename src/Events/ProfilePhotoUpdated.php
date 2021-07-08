@@ -2,7 +2,7 @@
 
 namespace SanderVanHooft\VaporizeSparkMollie\Events;
 
-use App\User;
+use App\Models\User;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Storage;
 
@@ -11,7 +11,7 @@ class ProfilePhotoUpdated
     use SerializesModels;
 
     /**
-     * @var \App\User
+     * @var \App\Models\User
      */
     public $user;
 
@@ -33,7 +33,7 @@ class ProfilePhotoUpdated
     /**
      * Create a new event instance.
      *
-     * @param \App\User $user
+     * @param \App\Models\User $user
      * @param string $bucket
      * @param string $key
      * @param string $contentType
