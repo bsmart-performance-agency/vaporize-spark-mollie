@@ -2,7 +2,7 @@
 
 namespace SanderVanHooft\VaporizeSparkMollie\Events;
 
-use App\User;
+use App\Models\Team;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Storage;
 
@@ -11,7 +11,7 @@ class TeamPhotoUpdated
     use SerializesModels;
 
     /**
-     * @var \App\Team
+     * @var \App\Models\Team
      */
     public $team;
 
@@ -33,12 +33,12 @@ class TeamPhotoUpdated
     /**
      * Create a new event instance.
      *
-     * @param \App\Team $team
+     * @param \App\Models\Team $team
      * @param string $bucket
      * @param string $key
      * @param string $contentType
      */
-    public function __construct(User $team, string $bucket, string $key, string $contentType)
+    public function __construct(Team $team, string $bucket, string $key, string $contentType)
     {
         $this->team = $team;
         $this->bucket = $bucket;
