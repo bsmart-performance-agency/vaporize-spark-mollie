@@ -5,6 +5,7 @@ use SanderVanHooft\VaporizeSparkMollie\Http\Controllers\TeamInvoiceController;
 use SanderVanHooft\VaporizeSparkMollie\Http\Controllers\UserInvoiceController;
 use SanderVanHooft\VaporizeSparkMollie\Interactions\UpdateProfilePhoto;
 use SanderVanHooft\VaporizeSparkMollie\Interactions\UpdateTeamPhoto;
+use SanderVanHooft\VaporizeSparkMollie\Http\Controllers\TeamPhotoController;
 
 return [
 
@@ -19,5 +20,6 @@ return [
      */
     'user_update_photo_interaction' => UpdateProfilePhoto::class,
     'team_update_photo_interaction' => UpdateTeamPhoto::class,
+    'team_update_photo_controller' => TeamPhotoController::class,
 
 ];
