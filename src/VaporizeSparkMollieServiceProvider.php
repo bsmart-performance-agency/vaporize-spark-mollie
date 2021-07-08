@@ -100,5 +100,10 @@ class VaporizeSparkMollieServiceProvider extends ServiceProvider
             \Laravel\Spark\Contracts\Interactions\Settings\Teams\UpdateTeamPhoto::class,
             config('vaporize_spark_mollie.team_update_photo_interaction')
         );
+        
+        $this->app->bind(
+            \Laravel\Spark\Http\Controllers\Settings\Teams\TeamPhotoController::class,
+            config('vaporize_spark_mollie.team_update_photo_controller')
+        );
     }
 }
