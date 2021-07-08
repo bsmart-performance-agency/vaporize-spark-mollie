@@ -2,7 +2,7 @@
 
 namespace SanderVanHooft\VaporizeSparkMollie\Events;
 
-use App\Team;
+use App\Models\Team;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Storage;
 
@@ -11,7 +11,7 @@ class TeamPhotoResized
     use SerializesModels;
 
     /**
-     * @var \App\Team
+     * @var \App\Models\Team
      */
     public $team;
 
@@ -28,7 +28,7 @@ class TeamPhotoResized
     /**
      * Create a new event instance.
      *
-     * @param \App\Team $team
+     * @param \App\Models\Team $team
      * @param string $oldKey
      * @param string $oldUrl
      */
