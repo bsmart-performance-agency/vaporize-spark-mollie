@@ -25,7 +25,7 @@
         }
     ],
     "require": {
-        "php": "^7.2",
+        "php": "^7.2|^8.0",
         "laravel/spark-aurelius-mollie": "^2.0",
         "laravel/cashier-mollie": "^1.13",
         "laravel/vapor-core": "^2.0"
